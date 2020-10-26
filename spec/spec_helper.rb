@@ -2,7 +2,12 @@ require 'httparty'
 require 'httparty/request'
 require 'httparty/response/headers'
 
+#referencia aonde esta o arquivo com o modulo contato
+require_relative './services/contatos_services.rb'
+
 RSpec.configure do |config|
+  #moculo esta como global 
+  include Contato
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
